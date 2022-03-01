@@ -1,0 +1,32 @@
+.Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x:scroll;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Display-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.Display-title {
+    padding-top: 5px;
+}
+.Display-text {
+    text-align: center;
+}
+.Display-card {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header {
+    font-size: 35px;
+}
