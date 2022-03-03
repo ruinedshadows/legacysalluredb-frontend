@@ -17,5 +17,28 @@ $theme-colors: (
 );
 
 
+@mixin alter-thumb-colors() {
+  $color: $tertiary;
+  $hover-color: darken(adjust-hue($color, 15), 15%);
+
+  .Display ::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .Display ::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  
+  .Display ::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: 20px;
+  }
+  
+  .Display ::-webkit-scrollbar-thumb:hover {
+    background-color: $hover-color;
+  }
+
+}
+@include alter-thumb-colors();
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
