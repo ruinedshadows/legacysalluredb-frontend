@@ -1,0 +1,8 @@
+.Off-canvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Off-canvas-title{
+    font-size: 40px;
+}

@@ -1,5 +1,4 @@
-// Override default variables before the import
-
+// Override default variables before the import\
 $primary:#eeeeee;
 $secondary:#ffffff;
 $tertiary:#222831;
@@ -16,7 +15,10 @@ $theme-colors: (
   "danger": $danger
 );
 
-
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 @mixin alter-thumb-colors() {
   $color: $tertiary;
   $hover-color: darken(adjust-hue($color, 15), 15%);

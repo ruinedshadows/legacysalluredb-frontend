@@ -1,0 +1,21 @@
+.Deck-display {
+    border: none !important;
+
+}
+
+.Deck-display-first-body {
+    font-size: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Deck-display-second-body {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
