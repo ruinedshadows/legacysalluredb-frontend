@@ -1,0 +1,36 @@
+.Whole-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 90vw;
+    margin: auto;
+    margin: 20px;
+    height: 220px;
+    border: none !important;
+
+}
+.Deck-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Whole-deck .Deck-title {
+    font-size: 30px;
+    margin: auto;
+}
+
+.Deck-description {
+    
+    font-size: 16px;
+}
+
+.Deck-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.Deck-img {
+    margin: auto;
+}

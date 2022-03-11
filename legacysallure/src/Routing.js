@@ -5,18 +5,31 @@ import shortid from 'shortid';
 import PageList from './constants/pageList';
 
 
-function RouterSetup ({navigationList}) {
-    const navy = navigationList.map(
-        entry => <Route key={shortid.generate()} path={`/${entry['path']}`} element={PageList[entry['component']]}/>
-    )
-   return (
+const RouterSetup = ({navigationList, detailedNaviList}) => (
     <BrowserRouter>
         <Routes>
-            {navy}
+            {
+                navigationList.map(
+                    entry => <Route key={shortid.generate()} 
+                                path={`${entry['path']}`} 
+                                element={PageList[entry['component']]}/>
+                )
+            }
+            {
+                detailedNaviList.map(
+                    entry => 
+                    <Route 
+                        path={`${entry['path']}`} 
+                        key={shortid.generate()}>
+                        <Route 
+                            path="info:id" 
+                            element={PageList[entry['component']]} />
+                    </Route>
+                )
+            }
             <Route path="*" element={PageList.notFound}/>            
         </Routes>
     </BrowserRouter>
-    )
-}
+)
 
 export default RouterSetup

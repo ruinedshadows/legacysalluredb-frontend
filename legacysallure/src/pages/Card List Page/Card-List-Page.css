@@ -1,0 +1,12 @@
+.Card-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.Card-page h1 {
+    font-size: 100px;
+}
+.Card-items {
+    width: 90%;
+}
