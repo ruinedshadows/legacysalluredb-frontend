@@ -1,0 +1,21 @@
+.hero-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 350px;
+    width: 100%;
+
+}
+
+.hero-card-content .hero-card-info {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.hero-card-info h4 {
+    font-size: 40px;
+}
+.hero-menu {
+    width: 50%;
+}

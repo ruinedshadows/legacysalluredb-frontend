@@ -1,8 +1,8 @@
 import React from 'react';
 import { Accordion, useAccordionButton } from 'react-bootstrap';
-import AccordionItem from 'react-bootstrap/esm/AccordionItem';
 import shortid from 'shortid';
-import numberedDeckColumnNames from '../../constants/column-names/numberedDeckColumnNames';
+import CardSize from '../../constants/card-sizes/cardUnitSize';
+import { deckColumnHeaders } from '../../constants/column-names/deckColumnHeaders.ts';
 import { deckColumnNames } from '../../constants/general-strings/deckColumnNames';
 import DeckDisplay from '../../share/deck-display/Deck-Display';
 import DeckUnit from '../../share/deck-unit/Deck-Unit';
@@ -55,7 +55,7 @@ const DeckListPage = () => {
         "Test Version",
         "Test Faction",
         "Test Tournament Legality",
-        Array(18).fill(["Test Name", 1, 100, 2, 2, 10, 4, "Test Faction", "Test Type"]),
+        Array(18).fill([1, "Test Name", 1, 100, 2, 2, 10, 4, "Test Faction", "Test Type"]),
         "Test User",
         "Test Description"
     ];
@@ -67,7 +67,7 @@ const DeckListPage = () => {
     for(var x = 1; x<=cardNum; x++) {
         pageCount++;
         testRowData.forEach((columnName, index) => {
-            deckColumns[numberedDeckColumnNames[index+1]] = columnName;
+            deckColumns[deckColumnHeaders[index+1]] = columnName;
         });
         pageEntries.push(
             <div key={shortid.generate()}>
@@ -77,7 +77,8 @@ const DeckListPage = () => {
                             key={shortid.generate()} 
                             title={deckColumns[deckColumnNames.name]} 
                             desc={deckColumns[deckColumnNames.description]}
-                            data={deckColumns}>  
+                            data={deckColumns}
+                            dimensions={CardSize.toolTipCard}>  
                         </DeckUnit>  
                     </Accordion.Header>
                     <Accordion.Body>

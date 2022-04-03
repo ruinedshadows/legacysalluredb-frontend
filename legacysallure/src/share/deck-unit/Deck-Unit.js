@@ -5,11 +5,11 @@ import ImgList from '../../constants/imgList';
 import { CRUDCardActions } from '../../redux/actions/card-info';
 import "./Deck-Unit.css";
 
-const DeckUnit = ({title, data, desc, SaveCardInfo}) => (
+const DeckUnit = ({title, data, desc, SaveCardInfo,dimensions}) => (
     <Card className="Whole-deck">
         <div className="Deck-content">
             <span className="Deck-img">
-                <Card.Img variant="top" src={ImgList.placeholder} style={{ width: '200px', height: '220px' }}/>
+                <Card.Img variant="top" src={ImgList.placeholder} style={{ width: dimensions.width, height: dimensions.height }}/>
             </span>
             <Card.Body className="Deck-body">
                 <Card.Title className="Deck-title" onClick={() => SaveCardInfo(data)} >

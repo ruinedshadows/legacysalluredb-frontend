@@ -1,0 +1,26 @@
+.type-row-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    text-align: center;
+    margin-left: -50px;
+
+}
+.total-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.type-row-count{
+    font-size: 15px;
+    width: 100px;
+}
+.type-row-name{
+    font-size: 100%;
+    width: 100px;
+}
+.type-row-cost{
+    font-size: 15px;
+    width: 100px;
+}

@@ -1,0 +1,20 @@
+.Add-delete-toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.Add-button {
+    width: 100px;
+}
+.Delete-button{
+    
+    width: 100px;
+}
+.Card-counter{
+    margin: auto;
+
+    width: 50px;
+}

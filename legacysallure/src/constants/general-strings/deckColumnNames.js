@@ -1,4 +1,5 @@
 export const deckColumnNames = {
+    "id":"ID",
     "name":"Name",
     "gold":"Gold",
     "created_date":"Created Date",

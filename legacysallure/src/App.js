@@ -19,6 +19,11 @@ function App() {
       "path":"/card-list",
       "name":"Card List",
       "component":"cardlists"
+    },
+    {
+      "path":"/deck-builder",
+      "name":"Deck Builder",
+      "component":"deckBuilder"
     }
   ]
   
