@@ -1,0 +1,24 @@
+.Battle-map {
+    display: flex;
+    margin: auto;
+    z-index: 6;
+}
+svg g .Inactive{
+  fill: black;
+  cursor: pointer;
+}
+svg g:hover {
+  fill: #4499a9 !important;
+}
+svg g Text {
+  font-size: 75%;
+  fill: white;
+  fill-opacity: 0.7;
+  transition: fill-opacity 0.5s;
+}
+
+svg g .Active {
+  fill: #4499a9 !important;
+  transition: fill-opacity 0.3s;
+  cursor: pointer;
+}

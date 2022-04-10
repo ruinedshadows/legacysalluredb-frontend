@@ -40,7 +40,7 @@ const PaginationItems = ({cardJump, onClick, currentNum, pageNum, activeNum, for
     return (
         
         <div className="Page-turner">
-            <Pagination size="lg" >
+            <Pagination size="sm" >
                 <Pagination.First onClick={skipBackwardClick} disabled={(currentNum-cardJump) < 1}/>
                 <Pagination.Prev onClick={backwardClick}  disabled={(currentNum-1) < 1}/>
                 {

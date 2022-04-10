@@ -5,7 +5,7 @@ import './Off-Canvas-Display.css';
 
 const OffCanvasDisplay = ({show, handleClose, data}) => {
     return (
-        <Offcanvas show={show} onHide={handleClose} scroll={true} backdrop={false} placement={'top'}>
+        <Offcanvas  className={"Off-canvas"} show={show} onHide={handleClose} scroll={true} backdrop={false} placement={'top'}>
             <Offcanvas.Header closeButton className="Off-canvas-title">
                 <Offcanvas.Title><h2>{data[cardColumnNames.name]}</h2></Offcanvas.Title>
             </Offcanvas.Header>

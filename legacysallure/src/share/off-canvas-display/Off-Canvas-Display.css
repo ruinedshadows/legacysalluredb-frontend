@@ -5,4 +5,9 @@
 }
 .Off-canvas-title{
     font-size: 40px;
+    height: 50px !important;
+}
+.Off-canvas {
+
+    height: 210px !important;
 }

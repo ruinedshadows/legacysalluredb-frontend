@@ -1,4 +1,5 @@
 export const cardColumnNames = {
+    "id":"ID",
     "name":"Name",
     "gold":"Gold",
     "power":"Power",
@@ -8,9 +9,6 @@ export const cardColumnNames = {
     "mana":"Mana",
     "faction":"Faction",
     "type":"Type",
-    "created_date":"Created Date",
-    "last_updated":"Last Updated",
-    "version":"Version",
-    "faction":"Faction",
-    "tournament_legal":"Is Tournament Legal"
+    "hexPlacement": "Hex Placement",
+    "abilities":"Abilities"
 }

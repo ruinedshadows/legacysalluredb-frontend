@@ -1,3 +1,9 @@
 .DB-table {
     width: 100% !important;
 }
+.ability-column{
+}
+.ability-column:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

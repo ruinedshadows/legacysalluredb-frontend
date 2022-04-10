@@ -1,0 +1,25 @@
+
+.Display-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Display-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.Display-text {
+    padding-right: 6px;
+}
+#gold {
+
+    font-size: 25px !important;
+}
+#name {
+    font-size: 12px;
+}
