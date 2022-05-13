@@ -20,7 +20,8 @@ const TableHead = ({filter}) =>(
 
 const TableRow = ({displayClick, header, data, filter, isLinked, onClick}) => {
     
-    let informationBlock = ConvertTableArrayToObject(data, header);
+    // let informationBlock = ConvertTableArrayToObject(data, header);
+    let informationBlock = data
     return (
         <tr >
             {
@@ -40,6 +41,7 @@ const TableRow = ({displayClick, header, data, filter, isLinked, onClick}) => {
 }
 
 const TableBody = ({header, data, filter, isLinked, onClick}) => {
+    console.log(data)
     const [show, setShow] = useState(false);
     const [canvasInfo, setCanvasInfo] = useState({});
     const handleClose = () => setShow(false);
