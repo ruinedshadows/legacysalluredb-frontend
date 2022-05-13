@@ -5,7 +5,7 @@ export function ConvertRowsToPages(cardNum, cardsLimit, rows) {
     let pageEntries = [];
     let pageCount = 0;
     rows.forEach((entry, index) => {
-        if(index === cardNum-1) {
+        if (index === cardNum-1) {
             pageEntries.push(entry)
         }
         if (pageCount === cardsLimit || index === cardNum-1) {
